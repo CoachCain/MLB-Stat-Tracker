@@ -26,6 +26,7 @@ class TeamData:
    # webpage this data will sit above the players on the active roster 
     
     def get_team_stats(self):
+        # write code here
         pass
     
 

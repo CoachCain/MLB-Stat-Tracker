@@ -27,7 +27,7 @@ class TeamData:
     
     def get_team_stats(self):
         # write code here
-        pass
+        return "hello"
     
 
 

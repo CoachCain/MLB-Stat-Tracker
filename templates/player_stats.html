@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 stats for {{ player }}</title>
+</head>
+<body>
+  <!-- <h1>{{ player_statistics }}</h1> -->
+
+  <!-- <table>
+    {% for key, value in player_statistics.items() %}
+      <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+      </tr>
+    {% endfor %}
+  </table> -->
+  <table>
+    <tr>
+      <td>id</td>
+      <td>{{ player_statistics.id }}</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>{{ player_statistics.first_name }}</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>{{ player_statistics.last_name }}</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>{{ player_statistics.active }}</td>
+    </tr>
+    <tr>
+      <td>current_team</td>
+      <td>{{ player_statistics.current_team }}</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>{{ player_statistics.position }}</td>
+    </tr>
+    <tr>
+      <td>nickname</td>
+      <td>{{ player_statistics.nickname }}</td>
+    </tr>
+    <tr>
+      <td>last_played</td>
+      <td>{{ player_statistics.last_played }}</td>
+    </tr>
+    <tr>
+      <td>mlb_debut</td>
+      <td>{{ player_statistics.mlb_debut }}</td>
+    </tr>
+    <tr>
+      <td>bat_side</td>
+      <td>{{ player_statistics.bat_side }}</td>
+    </tr>
+    <tr>
+      <td>pitch_hand</td>
+      <td>{{ player_statistics.pitch_hand }}</td>
+    </tr>
+  </table>
+  
+
+  <h2> Hitting Stats</h2>
+  <table>
+    <tr>
+      <th>Season</th>
+      <th>Games played</th>
+      <th>At bats</th>
+      <th>Hits</th>
+      <th>Runs</th>
+      <th>Home runs</th>
+      <th>RBI</th>
+      <th>AVG</th>
+      <th>OBP</th>
+      <th>SLG</th>
+      <th>OPS</th>
+    </tr>
+    {% for stat in player_statistics['stats'] %}
+      {% if stat['type'] == 'season' and stat['group'] == 'hitting' %}
+        <tr>
+          <td>{{ stat['season'] }}</td>
+          <td>{{ stat['stats']['gamesPlayed'] }}</td>
+          <td>{{ stat['stats']['atBats'] }}</td>
+          <td>{{ stat['stats']['hits'] }}</td>
+          <td>{{ stat['stats']['runs'] }}</td>
+          <td>{{ stat['stats']['homeRuns'] }}</td>
+          <td>{{ stat['stats']['rbi'] }}</td>
+          <td>{{ stat['stats']['avg'] }}</td>
+          <td>{{ stat['stats']['obp'] }}</td>
+          <td>{{ stat['stats']['slg'] }}</td>
+          <td>{{ stat['stats']['ops'] }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+  <h2>Fielding stats</h2>
+  <table>
+    <tr>
+      <th>Season</th>
+      <th>Position</th>
+      <th>Games played</th>
+      <th>Games started</th>
+      <th>Assists</th>
+      <th>Put outs</th>
+      <th>Errors</th>
+      <th>Fielding percentage</th>
+    </tr>
+    {% for stat in player_statistics['stats'] %}
+      {% if stat['type'] == 'season' and stat['group'] == 'fielding' %}
+        <tr>
+          <td>{{ stat['season'] }}</td>
+          <td>{{ stat['stats']['position']['name'] }}</td>
+          <td>{{ stat['stats']['gamesPlayed'] }}</td>
+          <td>{{ stat['stats']['gamesStarted'] }}</td>
+          <td>{{ stat['stats']['assists'] }}</td>
+          <td>{{ stat['stats']['putOuts'] }}</td>
+          <td>{{ stat['stats']['errors'] }}</td>
+          <td>{{ stat['stats']['fielding'] }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+</body>
+</html>

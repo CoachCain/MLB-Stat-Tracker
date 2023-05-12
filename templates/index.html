@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLB Stats</title>
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+<body class="index-page">
+  <header>
+    <div class="logo-container">
+      <img class="mlb-logo" src="static/images/mlb_logo.png">
+      <div class="logo-text">2023 MLB Stat Tracker</div>
+    </div>
+  </header>
+  <h1 class="page-description">This is a simple stat tracker for current active-roster players in the MLB</h1>
+    <p class="notice-text">Please note that this website is not affiliated with the MLB or any of its subsidaries and is only intended for personal use.</p>
+    {% for team in teams %}
+      <ul>
+        <li><a class="team-select" href="/roster/{{team.team_ID}}"> {{team.team_ID}} - {{team.team_name}}</a></li>
+      </ul>
+    {% endfor %}
+</body>
+<footer class="index-footer">
+  <div class="index-footer-container">
+    <p class="index-copyright">© Ryan Rafferty 2023</p>
+  </div>
+</footer>
+<script src="statis/js/script.js"></script>
+</html>

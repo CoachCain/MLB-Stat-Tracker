@@ -1,0 +1,122 @@
+[
+    {
+        "team_ID": 133,
+        "Team_name": "Oakland Athletics"
+    },
+    {
+        "team_ID": 134,
+        "Team_name": "Pittsburgh Pirates"
+    },
+    {
+        "team_ID": 135,
+        "Team_name": "San Diego Padres"
+    },
+    {
+        "team_ID": 136,
+        "Team_name": "Seattle Mariners"
+    },
+    {
+        "team_ID": 137,
+        "Team_name": "San Francisco Giants"
+    },
+    {
+        "team_ID": 138,
+        "Team_name": "St. Louis Cardinals"
+    },
+    {
+        "team_ID": 139,
+        "Team_name": "Tampa Bay Rays"
+    },
+    {
+        "team_ID": 140,
+        "Team_name": "Texas Rangers"
+    },
+    {
+        "team_ID": 141,
+        "Team_name": "Toronto Blue Jays"
+    },
+    {
+        "team_ID": 142,
+        "Team_name": "Minnesota Twins"
+    },
+    {
+        "team_ID": 143,
+        "Team_name": "Philadelphia Phillies"
+    },
+    {
+        "team_ID": 144,
+        "Team_name": "Atlanta Braves"
+    },
+    {
+        "team_ID": 145,
+        "Team_name": "Chicago White Sox"
+    },
+    {
+        "team_ID": 146,
+        "Team_name": "Miami Marlins"
+    },
+    {
+        "team_ID": 147,
+        "Team_name": "New York Yankees"
+    },
+    {
+        "team_ID": 158,
+        "Team_name": "Milwaukee Brewers"
+    },
+    {
+        "team_ID": 108,
+        "Team_name": "Los Angeles Angels"
+    },
+    {
+        "team_ID": 109,
+        "Team_name": "Arizona Diamondbacks"
+    },
+    {
+        "team_ID": 110,
+        "Team_name": "Baltimore Orioles"
+    },
+    {
+        "team_ID": 111,
+        "Team_name": "Boston Red Sox"
+    },
+    {
+        "team_ID": 112,
+        "Team_name": "Chicago Cubs"
+    },
+    {
+        "team_ID": 113,
+        "Team_name": "Cincinnati Reds"
+    },
+    {
+        "team_ID": 114,
+        "Team_name": "Cleveland Guardians"
+    },
+    {
+        "team_ID": 115,
+        "Team_name": "Colorado Rockies"
+    },
+    {
+        "team_ID": 116,
+        "Team_name": "Detroit Tigers"
+    },
+    {
+        "team_ID": 117,
+        "Team_name": "Houston Astros"
+    },
+    {
+        "team_ID": 118,
+        "Team_name": "Kansas City Royals"
+    },
+    {
+        "team_ID": 119,
+        "Team_name": "Los Angeles Dodgers"
+    },
+    {
+        "team_ID": 120,
+        "Team_name": "Washington Nationals"
+    },
+    {
+        "team_ID": 121,
+        "Team_name": "New York Mets"
+    }
+]

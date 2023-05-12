@@ -1,0 +1,91 @@
+.index-page {
+  background: #23395d;
+}
+
+
+
+.roster-page {
+  background: #23395d;
+}
+
+.roster-description {
+  color: white;
+}
+
+.notice-text {
+  font-family: veranda, sans-serif;
+  font-size: large;
+  color: white;
+}
+
+ul li:last-child {
+  list-style: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.mlb-logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+}
+.teams-logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+}
+.logo-text {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: veranda, sans-serif;
+  color: white;
+}
+
+.player-select {
+  color: white;
+}
+
+.team-select {
+  color: white;
+}
+
+.page-description {
+  color: white;
+}
+
+.index-copyright {
+  position: absolute;
+  width: 100%;
+  color: white;
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+
+.team-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.team-column:first-child {
+  margin-right: 1em;
+}
+
+.team-column:last-child {
+  margin-left: 1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

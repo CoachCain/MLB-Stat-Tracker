@@ -7,8 +7,7 @@ import statsapi
 app = Flask(__name__)
 
 
-TEAM_LOGOS = {
- 
+TEAM_LOGOS = { 
  133: 'images/athletics.png',
  134: 'images/pirates.png',
  135: 'images/padres.png', 
@@ -39,7 +38,6 @@ TEAM_LOGOS = {
  119: 'images/dodgers.png',
  120: 'images/nationals.png',
  121: 'images/mets.png'
-
 }
 
 

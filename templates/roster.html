@@ -14,7 +14,7 @@
   </div>
 </header>
 
-  <h1 class="roster-description">{{ team_name }} Roster</h1>
+  <h1 class="roster-description">{{ team_name }} - Active Roster</h1>
     <ul>
       {% for player in roster %}
         <li><a class="player-select" href="/player_stats/{{ player[2] }} {{ ' '.join(player[3:]) }}">{{ player[0] }} {{ player[1] }} {{ player[2] }} {{ ' '.join(player[3:]) }}</a></li>

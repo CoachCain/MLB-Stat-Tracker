@@ -5,19 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2023 stats for {{ player }}</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
 </head>
-<body>
-  <!-- <h1>{{ player_statistics }}</h1> -->
-
-  <!-- <table>
-    {% for key, value in player_statistics.items() %}
-      <tr>
-        <td>{{ key }}</td>
-        <td>{{ value }}</td>
-      </tr>
-    {% endfor %}
-  </table> -->
-  <table>
+<body class="stats-page">
+  <table class="player-stats">
     <tr>
       <td>id</td>
       <td>{{ player_statistics.id }}</td>
@@ -63,10 +54,8 @@
       <td>{{ player_statistics.pitch_hand }}</td>
     </tr>
   </table>
-  
-
-  <h2> Hitting Stats</h2>
-  <table>
+  <h2 class="hitting-stats-heading"> Hitting Stats</h2>
+  <table class="hitting-stats">
     <tr>
       <th>Season</th>
       <th>Games played</th>
@@ -98,8 +87,8 @@
       {% endif %}
     {% endfor %}
   </table>
-  <h2>Fielding stats</h2>
-  <table>
+  <h2 class="fielding-stats-heading">Fielding stats</h2>
+  <table class="fielding-stats">
     <tr>
       <th>Season</th>
       <th>Position</th>

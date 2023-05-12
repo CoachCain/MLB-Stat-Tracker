@@ -2,8 +2,6 @@
   background: #23395d;
 }
 
-
-
 .roster-page {
   background: #23395d;
 }
@@ -88,4 +86,30 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+.stats-page {
+  background: #23395d; 
+}
+
+.player-stats {
+  color: white;
+}
+
+
+.hitting-stats-heading {
+  color: white;
+}
+
+.hitting-stats {
+  color: white;
+}
+
+.fielding-stats-heading {
+  color: white;
+}
+
+.fielding-stats {
+  color: white;
 }
